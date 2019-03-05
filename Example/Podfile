@@ -1,12 +1,11 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
+platform :ios, '8.0'
 
-target 'SACountingLabel_Example', :exclusive => true do
-  pod "SACountingLabel", :path => "../"
-end
-
-target 'SACountingLabel_Tests', :exclusive => true do
+target 'SACountingLabel_Example' do
   pod "SACountingLabel", :path => "../"
 
-  
+  target 'SACountingLabel_Tests' do
+    inherit! :search_paths
+  end
 end

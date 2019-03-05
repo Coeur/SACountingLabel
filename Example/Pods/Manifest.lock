@@ -1,14 +1,16 @@
 PODS:
-  - SACountingLabel (0.1.1)
+  - SACountingLabel (0.2.0)
 
 DEPENDENCIES:
   - SACountingLabel (from `../`)
 
 EXTERNAL SOURCES:
   SACountingLabel:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  SACountingLabel: 6b0c2a177b77e65ea63772e50f4d4285bb6d5a71
+  SACountingLabel: f66211e4e397701f65344dc93c8d84a9fa78c4cf
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 9f242bf1d46818aea1e9be3c9030a063e9d05e9d
+
+COCOAPODS: 1.6.1

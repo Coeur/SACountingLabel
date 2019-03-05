@@ -28,10 +28,10 @@ public class SACountingLabel: UILabel {
     
     var start: Float = 0.0
     var end: Float = 0.0
-    var timer: NSTimer?
-    var progress: NSTimeInterval!
-    var lastUpdate: NSTimeInterval!
-    var duration: NSTimeInterval!
+    var timer: Timer?
+    var progress: TimeInterval!
+    var lastUpdate: TimeInterval!
+    var duration: TimeInterval!
     var countingType: CountingType!
     var animationType: AnimationType!
     public var format: String?
@@ -45,7 +45,7 @@ public class SACountingLabel: UILabel {
         return start + (update * (end - start));
     }
     
-    public func countFrom(fromValue: Float, to toValue: Float, withDuration duration: NSTimeInterval, andAnimationType aType: AnimationType, andCountingType cType: CountingType) {
+    public func countFrom(_ fromValue: Float, to toValue: Float, withDuration duration: TimeInterval, andAnimationType aType: AnimationType, andCountingType cType: CountingType) {
         
         // Set values
         self.start = fromValue
@@ -54,7 +54,7 @@ public class SACountingLabel: UILabel {
         self.countingType = cType
         self.animationType = aType
         self.progress = 0.0
-        self.lastUpdate = NSDate.timeIntervalSinceReferenceDate()
+        self.lastUpdate = NSDate.timeIntervalSinceReferenceDate
         
         // Invalidate and nullify timer
         killTimer()
@@ -66,10 +66,10 @@ public class SACountingLabel: UILabel {
         }
         
         // Create timer
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: "updateValue", userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(updateValue), userInfo: nil, repeats: true)
     }
     
-    func updateText(value: Float) {
+    func updateText(_ value: Float) {
         switch countingType! {
         case .Int:
             self.text = "\(Int(value))"
@@ -84,10 +84,10 @@ public class SACountingLabel: UILabel {
         }
     }
     
-    func updateValue() {
+    @objc func updateValue() {
         
         // Update the progress
-        let now = NSDate.timeIntervalSinceReferenceDate()
+        let now = NSDate.timeIntervalSinceReferenceDate
         progress = progress + (now - lastUpdate)
         lastUpdate = now
         
@@ -98,7 +98,6 @@ public class SACountingLabel: UILabel {
         }
         
         updateText(currentValue)
-        
     }
     
     func killTimer() {
@@ -106,7 +105,7 @@ public class SACountingLabel: UILabel {
         timer = nil
     }
     
-    func updateCounter(t: Float) -> Float {
+    func updateCounter(_ t: Float) -> Float {
         switch animationType! {
         case .Linear:
             return t
@@ -127,9 +126,6 @@ public class SACountingLabel: UILabel {
             } else {
                 return Float(sign * 0.5) * (powf(t-2, kCounterRate) + Float(sign * 2))
             }
-            
         }
     }
-    
-    
 }

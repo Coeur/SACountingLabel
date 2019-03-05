@@ -1,6 +1,6 @@
 {
   "name": "SACountingLabel",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "summary": "An animated counting UILabel, written in Swift.",
   "description": "A custom animated counting UILabel, written in Swift.",
   "homepage": "https://github.com/sudeepag/SACountingLabel",
@@ -10,16 +10,16 @@
   },
   "source": {
     "git": "https://github.com/sudeepag/SACountingLabel.git",
-    "tag": "0.1.1"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "requires_arc": true,
   "source_files": "Pod/Classes/**/*",
   "resource_bundles": {
     "SACountingLabel": [
       "Pod/Assets/*.png"
     ]
-  }
+  },
+  "frameworks": "UIKit"
 }

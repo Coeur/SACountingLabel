@@ -21,19 +21,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         countForAnimationType(.EaseOut)
-        
     }
     
-    func countForAnimationType(type: SACountingLabel.AnimationType) {
-        intLabel.countFrom(0, to: 349, withDuration: NSTimeInterval(durationSlider.value), andAnimationType: type, andCountingType: .Int)
+    func countForAnimationType(_ type: SACountingLabel.AnimationType) {
+        intLabel.countFrom(0, to: 349, withDuration: TimeInterval(durationSlider.value), andAnimationType: type, andCountingType: .Int)
         
-        floatLabel.countFrom(0, to: 1.0, withDuration: NSTimeInterval(durationSlider.value), andAnimationType: type, andCountingType: .Float)
+        floatLabel.countFrom(0, to: 1.0, withDuration: TimeInterval(durationSlider.value), andAnimationType: type, andCountingType: .Float)
         
-        customLabel.countFrom(0, to: 100.0, withDuration: NSTimeInterval(durationSlider.value), andAnimationType: type, andCountingType: .Custom)
+        customLabel.countFrom(0, to: 100.0, withDuration: TimeInterval(durationSlider.value), andAnimationType: type, andCountingType: .Custom)
         customLabel.format = "%.1f%%"
     }
     
-    @IBAction func buttonSelected(sender: AnyObject) {
+    @IBAction func buttonSelected(_ sender: AnyObject) {
         switch sender.tag {
         case 0:
             countForAnimationType(.Linear)
@@ -48,9 +47,8 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func sliderChanged(sender: AnyObject) {
+    @IBAction func sliderChanged(_ sender: AnyObject) {
         durationLabel.text = String(format: "Duration: %.1f", durationSlider.value)
     }
-
 }
 
