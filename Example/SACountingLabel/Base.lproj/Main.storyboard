@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tYj-64-7Aw">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tYj-64-7Aw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,117 +18,78 @@
                         <viewControllerLayoutGuide type="bottom" id="Nlg-Pc-fUu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bIy-B2-Wpl">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fD8-oZ-prz" customClass="SACountingLabel" customModule="SACountingLabel">
-                                <rect key="frame" x="16" y="96" width="568" height="33.5"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="28"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counting with integers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEg-MH-5t1">
-                                <rect key="frame" x="16" y="60" width="568" height="28.5"/>
+                                <rect key="frame" x="16" y="60" width="343" height="28.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezx-CA-vhE" customClass="SACountingLabel" customModule="SACountingLabel">
-                                <rect key="frame" x="16" y="215.5" width="568" height="33.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fD8-oZ-prz" customClass="SACountingLabel" customModule="SACountingLabel">
+                                <rect key="frame" x="16" y="96.5" width="343" height="33.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="28"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Counting with floating points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Vn-yA-8Je">
-                                <rect key="frame" x="16" y="179.5" width="568" height="28.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counting with floating points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Vn-yA-8Je">
+                                <rect key="frame" x="16" y="170" width="343" height="28.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezx-CA-vhE" customClass="SACountingLabel" customModule="SACountingLabel">
+                                <rect key="frame" x="16" y="206.5" width="343" height="33.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uen-9Y-c3q">
-                                <rect key="frame" x="277" y="156" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="68" id="edZ-ff-DQt"/>
-                                </constraints>
+                                <rect key="frame" x="164" y="374" width="47" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Linear">
-                                    <color key="titleColor" red="1" green="0.33725490200000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.33725490200000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="edZ-ff-DQt"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <exclude reference="edZ-ff-DQt"/>
-                                    </mask>
-                                </variation>
                                 <connections>
                                     <action selector="buttonSelected:" destination="tYj-64-7Aw" eventType="touchUpInside" id="Qwb-L0-Q9f"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMf-in-o5J">
-                                <rect key="frame" x="276" y="189" width="49" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="71" id="A0I-1q-f8Y"/>
-                                </constraints>
+                                <rect key="frame" x="160" y="419" width="55" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Ease In">
-                                    <color key="titleColor" red="1" green="0.3379946553" blue="0.36730347359999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.3379946553" blue="0.36730347359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="A0I-1q-f8Y"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <exclude reference="A0I-1q-f8Y"/>
-                                    </mask>
-                                </variation>
                                 <connections>
                                     <action selector="buttonSelected:" destination="tYj-64-7Aw" eventType="touchUpInside" id="OIX-oK-PEc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ntr-ps-tcc">
-                                <rect key="frame" x="269" y="220" width="62" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="84" id="la3-xs-mG6"/>
-                                </constraints>
+                                <rect key="frame" x="152.5" y="464" width="70" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Ease Out">
-                                    <color key="titleColor" red="1" green="0.3379946553" blue="0.36730347359999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.3379946553" blue="0.36730347359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="la3-xs-mG6"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <exclude reference="la3-xs-mG6"/>
-                                    </mask>
-                                </variation>
                                 <connections>
                                     <action selector="buttonSelected:" destination="tYj-64-7Aw" eventType="touchUpInside" id="G5V-Iv-PGz"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOB-UT-Irw" customClass="SACountingLabel" customModule="SACountingLabel">
-                                <rect key="frame" x="16" y="340" width="568" height="33.5"/>
+                                <rect key="frame" x="16" y="316.5" width="343" height="33.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="28"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counting with custom formats" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cg-SN-FLT">
-                                <rect key="frame" x="16" y="304" width="568" height="28.5"/>
+                                <rect key="frame" x="16" y="280" width="343" height="28.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="qQg-mg-hsr">
-                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
-                                <color key="tintColor" red="1" green="0.33725490200000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="59.5" y="584.5" width="256" height="31"/>
+                                <color key="tintColor" red="1" green="0.33725490200000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="252" id="9HB-XO-RCd"/>
                                     <constraint firstAttribute="width" constant="252" id="K02-Sk-t8L"/>
@@ -148,36 +111,23 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration: 2.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpb-dG-EGU">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <rect key="frame" x="144.5" y="626.5" width="86.5" height="17.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDh-vj-vVA">
-                                <rect key="frame" x="254" y="249" width="93" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="111" id="Hcm-Ho-aKX"/>
-                                </constraints>
+                                <rect key="frame" x="135.5" y="509" width="104" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Ease In &amp; Out">
-                                    <color key="titleColor" red="1" green="0.3379946553" blue="0.36730347359999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.3379946553" blue="0.36730347359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Hcm-Ho-aKX"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <exclude reference="Hcm-Ho-aKX"/>
-                                    </mask>
-                                </variation>
                                 <connections>
                                     <action selector="buttonSelected:" destination="tYj-64-7Aw" eventType="touchUpInside" id="vhz-dR-XDF"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fDh-vj-vVA" firstAttribute="top" secondItem="Ntr-ps-tcc" secondAttribute="bottom" constant="8" id="2Ww-Hl-m7O">
                                 <variation key="heightClass=regular-widthClass=compact" constant="12"/>
@@ -208,7 +158,7 @@
                             <constraint firstItem="2Vn-yA-8Je" firstAttribute="leading" secondItem="bIy-B2-Wpl" secondAttribute="leading" constant="16" id="RE6-gW-khh"/>
                             <constraint firstAttribute="trailing" secondItem="bEg-MH-5t1" secondAttribute="trailing" constant="16" id="RuF-wp-bJM"/>
                             <constraint firstItem="2Vn-yA-8Je" firstAttribute="top" secondItem="fD8-oZ-prz" secondAttribute="bottom" constant="217.5" id="Sw4-DK-Sx5">
-                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
                             </constraint>
                             <constraint firstItem="uen-9Y-c3q" firstAttribute="centerY" secondItem="bIy-B2-Wpl" secondAttribute="centerY" id="TQc-jo-3vw"/>
                             <constraint firstItem="uen-9Y-c3q" firstAttribute="top" secondItem="ezx-CA-vhE" secondAttribute="bottom" constant="10.5" id="ThG-Tg-ztK">
@@ -230,13 +180,13 @@
                             <constraint firstItem="5cg-SN-FLT" firstAttribute="leading" secondItem="bIy-B2-Wpl" secondAttribute="leading" constant="113" id="fwf-Ld-SW1">
                                 <variation key="heightClass=regular-widthClass=compact" constant="16"/>
                             </constraint>
-                            <constraint firstItem="bEg-MH-5t1" firstAttribute="top" secondItem="bIy-B2-Wpl" secondAttribute="topMargin" constant="60" id="koy-uj-6Dq"/>
+                            <constraint firstItem="bEg-MH-5t1" firstAttribute="top" secondItem="bIy-B2-Wpl" secondAttribute="topMargin" constant="40" id="koy-uj-6Dq"/>
                             <constraint firstItem="qQg-mg-hsr" firstAttribute="leading" secondItem="bIy-B2-Wpl" secondAttribute="leadingMargin" constant="54" id="m76-x0-NtV"/>
                             <constraint firstItem="hMf-in-o5J" firstAttribute="top" secondItem="uen-9Y-c3q" secondAttribute="bottom" constant="8" id="sTk-RQ-jQt">
                                 <variation key="heightClass=regular-widthClass=compact" constant="12"/>
                             </constraint>
                             <constraint firstItem="5cg-SN-FLT" firstAttribute="top" secondItem="ezx-CA-vhE" secondAttribute="bottom" constant="-8" id="wSc-uf-Dw2">
-                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
                             </constraint>
                             <constraint firstAttribute="trailing" secondItem="5cg-SN-FLT" secondAttribute="trailing" constant="-81" id="yte-Wb-wtW">
                                 <variation key="heightClass=regular-widthClass=compact" constant="16"/>

@@ -14,16 +14,16 @@ public class SACountingLabel: UILabel {
     let kCounterRate: Float = 3.0
     
     public enum AnimationType {
-        case Linear
-        case EaseIn
-        case EaseOut
-        case EaseInOut
+        case linear
+        case easeIn
+        case easeOut
+        case easeInOut
     }
     
     public enum CountingType {
-        case Int
-        case Float
-        case Custom
+        case int
+        case float
+        case custom
     }
     
     var start: Float = 0.0
@@ -71,11 +71,11 @@ public class SACountingLabel: UILabel {
     
     func updateText(_ value: Float) {
         switch countingType! {
-        case .Int:
+        case .int:
             self.text = "\(Int(value))"
-        case .Float:
+        case .float:
             self.text = String(format: "%.2f", value)
-        case .Custom:
+        case .custom:
             if let format = format {
                 self.text = String(format: format, value)
             } else {
@@ -107,13 +107,13 @@ public class SACountingLabel: UILabel {
     
     func updateCounter(_ t: Float) -> Float {
         switch animationType! {
-        case .Linear:
+        case .linear:
             return t
-        case .EaseIn:
+        case .easeIn:
             return powf(t, kCounterRate)
-        case .EaseOut:
+        case .easeOut:
             return 1.0 - powf((1.0 - t), kCounterRate)
-        case .EaseInOut:
+        case .easeInOut:
             var t = t
             var sign = 1.0;
             let r = Int(kCounterRate)
