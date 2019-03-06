@@ -54,7 +54,7 @@ public class SACountingLabel: UILabel {
         self.countingType = cType
         self.animationType = aType
         self.progress = 0.0
-        self.lastUpdate = NSDate.timeIntervalSinceReferenceDate
+        self.lastUpdate = CACurrentMediaTime()
         
         // Invalidate and nullify timer
         killTimer()
@@ -87,7 +87,7 @@ public class SACountingLabel: UILabel {
     @objc func updateValue() {
         
         // Update the progress
-        let now = NSDate.timeIntervalSinceReferenceDate
+        let now = CACurrentMediaTime()
         progress = progress + (now - lastUpdate)
         lastUpdate = now
         
